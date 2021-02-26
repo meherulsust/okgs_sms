@@ -1,0 +1,135 @@
+
+<script language="javascript" type="text/javascript" src="http://www.educlerk.com/pbemsm/smsadmin/js/jquery-1.7.2.js"></script>
+<script language="javascript" type="text/javascript" src="http://www.educlerk.com/pbemsm/smsadmin/js/smsadmin.js"></script>
+
+<style>
+.text{
+	text-align: center;
+	vertical-align: bottom;
+	width: 20px;
+	margin: 0px;
+	padding: 0px;
+	padding-left: 3px;
+	padding-right: 3px;
+	padding-top: 10px;
+	white-space: nowrap;
+	
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	mso-rotate: 90;
+	-webkit-transform-origin: 50% 50%;
+	-moz-transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+	-o-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);		
+}
+</style>
+<h2>Prime Bank English Medium School (Mirpur)</h2>
+<span>Financail Report</span><br/>
+<span>Report for : Payment Status : UNPAID, Year : 2017, Month : January</span><br/>
+
+<table border="1" width="100%" id="report">		
+	<tr>
+		<td align="center"><b>Fund</b></td>
+				<td align="center" style="background:Green" colspan="1">General Fund</td>
+		<td></td>	
+				<td align="center" style="background:Green" colspan="0">Gratuity Fund</td>
+		<td></td>	
+				<td align="center" style="background:Green" colspan="0">Games Fund</td>
+		<td></td>	
+				<td align="center" style="background:Green" colspan="0">Library Fund</td>
+		<td></td>	
+				<td align="center" style="background:Green" colspan="0">Building Dev. & Maint. Fund</td>
+		<td></td>	
+				<td align="center" style="background:Green" colspan="0">Examination Fund</td>
+		<td></td>	
+				<td align="center" style="background:Green" colspan="0">Medical Fund</td>
+		<td></td>	
+				<td align="center" style="background:Green" colspan="0">St. Wellfare Fand</td>
+		<td></td>	
+				<td align="center" style="background:Green" colspan="0">Scholarship Fund</td>
+		<td></td>	
+				<td align="center" style="background:Green" colspan="0">Transport Fund</td>
+		<td></td>	
+				<td align="center" style="background:Green" colspan="0">Scout Fund</td>
+		<td></td>	
+				<td align="center" style="background:Green" colspan="0">BNCC Fund</td>
+		<td></td>	
+				<td></td>	
+	</tr>
+	<tr>
+		<td align="center"><b>Payment Date</b></td>
+							<td class="head"><div class="text">Service Charge + VAT</div></td>				
+				<td class="head"><div class="text"><b>1. Sub Total</b></div></td>
+		<td></td>		<td class="head"><div class="text"><b>2. Sub Total</b></div></td>
+		<td></td>		<td class="head"><div class="text"><b>3. Sub Total</b></div></td>
+		<td></td>		<td class="head"><div class="text"><b>4. Sub Total</b></div></td>
+		<td></td>		<td class="head"><div class="text"><b>5. Sub Total</b></div></td>
+		<td></td>		<td class="head"><div class="text"><b>6. Sub Total</b></div></td>
+		<td></td>		<td class="head"><div class="text"><b>7. Sub Total</b></div></td>
+		<td></td>		<td class="head"><div class="text"><b>8. Sub Total</b></div></td>
+		<td></td>		<td class="head"><div class="text"><b>9. Sub Total</b></div></td>
+		<td></td>		<td class="head"><div class="text"><b>10. Sub Total</b></div></td>
+		<td></td>		<td class="head"><div class="text"><b>11. Sub Total</b></div></td>
+		<td></td>		<td class="head"><div class="text"><b>12. Sub Total</b></div></td>
+			
+		<td class="head"><div class="text"><b>13. Grand Total</b></div></td>	
+	</tr>
+	
+		<tr>
+		<td align="right" style="background:Green"><b>Fund wise Total = </b></td>
+		                <td align="right" style="mso-number-format:'\@';background:yellow">					
+		                <td  align="right" style="mso-number-format:'\@';background:yellow"><b></b></td>
+					
+					<td  align="right" style="mso-number-format:'\@';">0.00</td>
+		                <td  align="right" style="mso-number-format:'\@';background:yellow"><b></b></td>
+					
+					<td  align="right" style="mso-number-format:'\@';">0.00</td>
+		                <td  align="right" style="mso-number-format:'\@';background:yellow"><b></b></td>
+					
+					<td  align="right" style="mso-number-format:'\@';">0.00</td>
+		                <td  align="right" style="mso-number-format:'\@';background:yellow"><b></b></td>
+					
+					<td  align="right" style="mso-number-format:'\@';">0.00</td>
+		                <td  align="right" style="mso-number-format:'\@';background:yellow"><b></b></td>
+					
+					<td  align="right" style="mso-number-format:'\@';">0.00</td>
+		                <td  align="right" style="mso-number-format:'\@';background:yellow"><b></b></td>
+					
+					<td  align="right" style="mso-number-format:'\@';">0.00</td>
+		                <td  align="right" style="mso-number-format:'\@';background:yellow"><b></b></td>
+					
+					<td  align="right" style="mso-number-format:'\@';">0.00</td>
+		                <td  align="right" style="mso-number-format:'\@';background:yellow"><b></b></td>
+					
+					<td  align="right" style="mso-number-format:'\@';">0.00</td>
+		                <td  align="right" style="mso-number-format:'\@';background:yellow"><b></b></td>
+					
+					<td  align="right" style="mso-number-format:'\@';">0.00</td>
+		                <td  align="right" style="mso-number-format:'\@';background:yellow"><b></b></td>
+					
+					<td  align="right" style="mso-number-format:'\@';">0.00</td>
+		                <td  align="right" style="mso-number-format:'\@';background:yellow"><b></b></td>
+					
+					<td  align="right" style="mso-number-format:'\@';">0.00</td>
+		                <td  align="right" style="mso-number-format:'\@';background:yellow"><b></b></td>
+			</tr>
+	<tr>
+		<td align="right" style="mso-number-format:'\@';" colspan="17">		
+			<b>Final Total = 0.00</b>
+		</td>		
+	</tr>
+	<tr height="100">
+		<td valign="bottom" align="center" colspan="23">		
+			Accountant &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Admin Officer (Act.)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Vice Principal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Principal
+		</td>		
+	</tr>
+	
+</table>

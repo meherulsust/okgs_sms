@@ -1,0 +1,14 @@
+[05-Mar-2014 23:00:53] PHP Fatal error:  Call to undefined method DateTime::createFromFormat() in /home4/educlerk/public_html/adventist/smsadmin/backend/controllers/exam.php on line 59
+[05-Mar-2014 23:02:00] PHP Fatal error:  Call to undefined method DateTime::createFromFormat() in /home4/educlerk/public_html/adventist/smsadmin/backend/controllers/classtest.php on line 79
+[21-Dec-2014 16:28:43 Asia/Dhaka] PHP Fatal error:  Cannot redeclare Tuitionfeepaymentmodel::get_student_info() in /home4/educlerk/public_html/rajcpsc/shared/models/tuitionfeepaymentmodel.php on line 38
+[15-Jan-2015 17:40:10 Asia/Dhaka] PHP Fatal error:  Call to a member function update() on a non-object in /home4/educlerk/public_html/rajcpsc/smsadmin/backend/controllers/teacher.php on line 107
+[15-Jan-2015 17:40:18 Asia/Dhaka] PHP Fatal error:  Call to a member function update() on a non-object in /home4/educlerk/public_html/rajcpsc/smsadmin/backend/controllers/teacher.php on line 107
+[15-Jan-2015 17:40:45 Asia/Dhaka] PHP Fatal error:  Call to a member function update() on a non-object in /home4/educlerk/public_html/rajcpsc/smsadmin/backend/controllers/teacher.php on line 107
+[15-Jan-2015 17:41:24 Asia/Dhaka] PHP Fatal error:  Call to a member function update() on a non-object in /home4/educlerk/public_html/rajcpsc/smsadmin/backend/controllers/teacher.php on line 107
+[15-Jan-2015 17:42:01 Asia/Dhaka] PHP Fatal error:  Call to a member function update() on a non-object in /home4/educlerk/public_html/rajcpsc/smsadmin/backend/controllers/teacher.php on line 107
+[29-Jan-2015 10:47:09 Asia/Dhaka] PHP Fatal error:  Call to a member function update() on a non-object in /home4/educlerk/public_html/rajcpsc/smsadmin/backend/controllers/teacher.php on line 107
+[08-Feb-2015 23:46:48 Asia/Dhaka] PHP Fatal error:  Call to a member function update() on a non-object in /home4/educlerk/public_html/rajcpsc/smsadmin/backend/controllers/teacher.php on line 107
+[26-Aug-2015 12:04:50 Asia/Dhaka] PHP Parse error:  syntax error, unexpected 'protected' (T_PROTECTED) in /home4/educlerk/public_html/rajcpsc/smsadmin/backend/controllers/send_message.php on line 172
+[05-Sep-2016 11:58:15 Asia/Dhaka] PHP Parse error:  syntax error, unexpected ')' in /home4/educlerk/public_html/imsn/smsadmin/backend/controllers/publish_result.php on line 1149
+[05-Sep-2016 11:58:58 Asia/Dhaka] PHP Parse error:  syntax error, unexpected ')' in /home4/educlerk/public_html/imsn/smsadmin/backend/controllers/publish_result.php on line 1149
+[05-Sep-2016 11:59:09 Asia/Dhaka] PHP Parse error:  syntax error, unexpected ')' in /home4/educlerk/public_html/imsn/smsadmin/backend/controllers/publish_result.php on line 1211

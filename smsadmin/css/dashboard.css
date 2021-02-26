@@ -1,0 +1,70 @@
+
+/* -------------------- Dashboard -------------------- */
+
+#Dashboard{
+	width:960px;
+	margin:0 auto;
+	text-align:center;
+}
+
+a.dashboard-module, 
+a.dashboard-module:visited { 
+	width: 142px; 
+	height: 142px; 
+	display: block; 
+	float: left; 
+	background: url(../img/dashboard-module.gif) top left no-repeat; 
+	margin: 9px 20px;  
+	text-align: center; 
+	color: #444444; 
+	text-decoration:none;
+	font-weight:bold;
+}
+	
+a.dashboard-module:hover, 
+a.dashboard-module:active { 
+	background-position: bottom left; 
+	text-decoration: none; 
+	color:#0063be; 
+}
+
+a.dashboard-module img { 
+	margin-top: 20px; 
+}
+	
+a.dashboard-module span { 
+	margin:10px 5px 0 5px; 
+	display: block; 
+}
+
+/*------------------- start profile --------------------*/
+#teacher_profile{
+	width:960px;
+}
+#profile_pic{
+	width:200px;
+	height:200px;
+	float:left;
+	background:#EAEBEC;
+	border:1px solid #ccc;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	padding:5px;
+}
+#profile_info{
+	width:600px;
+	float:left;
+	margin:170px 0 0 20px;
+	text-align:left;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#666;
+	font-size:20px;
+	text-shadow: 1px 1px 0px #fff;	
+}
+/* ---------------- start table -------------- */
+
+
+.clear{
+	clear:both;
+}

@@ -1,0 +1,8 @@
+.title{ font-family: Cambria, Georgia, serif;color: #1099EF;font-weight: bold;font-size: 16px;}
+.type{ color: red;font-weight: bold;font-size: 12px;margin:5px;}
+.address{color: #170B5D;font-weight: bold;font-size: 11px;margin:5px;}
+.school{color: #006F34;font-weight: bold;font-size: 45px; margin-top:1px;}
+.image{width:80px;margin:0px 0px;}
+.name{font-family: Cambria, Georgia, serif;color: #000;font-weight:bold;font-size:13px;}
+.class{font-family: Cambria, Georgia, serif;color: #006F34;font-weight:bold;font-size:13px;}
+.admit_description{font-family: Cambria, Georgia, serif;color: #000;font-weight:bold;font-size:11px;padding:5px 0;}

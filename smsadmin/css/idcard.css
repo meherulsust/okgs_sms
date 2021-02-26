@@ -1,0 +1,29 @@
+/* 
+    Document   : idcard
+    Created on : jan 12, 2016, 8:28:35 PM
+    Author     : Meherul 
+    Description:
+        Purpose of the stylesheet follows.
+        student id card generation layout.
+*/
+.bg{
+	left:0px;
+	position: absolute;
+	top: 140px;
+	width: 100%;
+	height: auto;
+	opacity: 0.15;
+	
+}
+span{font-weight:bold;}
+#card{width:270px; min-height:300px;padding:5px;border-radius:0px;border:2px solid #1099EF;margin:0px auto;}
+.title{ font-family: Cambria, Georgia, serif;color: #1099EF;font-weight: bold;letter-spacing:-1px;font-size: 18px;}
+.type{ color: red;font-weight: bold;font-size: 18px;margin-left: 75px;}
+/* .address{color: #170B5D;font-weight: bold;font-size: 13px;} */
+.school{color: #006F34;font-weight: bold;font-size: 45px; margin-top:1px;}
+.logo{width:85px;margin:0px 60px;}
+.image{height:130px;width:110px;margin:0px 78px;border:3px solid #1099EF;}
+.name{font-family: Cambria, Georgia, serif;font-style: italic;color: #000;font-weight:bold;font-size:15px;}
+.class{font-family: Cambria, Georgia, serif;color: #006F34;font-weight:bold;font-size:14px;}
+
+

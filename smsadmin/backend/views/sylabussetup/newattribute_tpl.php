@@ -1,0 +1,1 @@
+<?php $this->load->view('sylabussetup/sylabus_course_attribute_form.php') ?>

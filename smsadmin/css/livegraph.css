@@ -1,0 +1,64 @@
+div.liveGraph div.bars div.bar span { 
+	background-repeat: repeat;
+	color: #fff;
+	font-weight: bold;
+	padding-top:5px;
+	font-size: 18px;
+	border: none !important;
+}
+.barlabel{
+	font-size: 13px;
+	font-weight: bold;
+}
+div.liveGraph{ 
+	width:85%;
+	margin:0 auto;
+}
+div.class_content {
+	width: auto;
+	border-radius: 3px;
+	padding: 10px;
+	border: #ddd 1px solid;
+	margin: 20px;
+}
+div.liveGraph div.bars div[bar="tb1"] span {
+	background-color: #0A75AD;
+} 
+div.liveGraph div.bars div[bar="tb2"] span {
+	background-color: #16AD0A;
+} 
+div.liveGraph div.bars div[bar="tb3"] span {
+	background-color: #F7131E;
+}
+div.liveGraph div.bars div[bar="tb4"] span {
+	background-color: #DDDB13;
+} 
+div.liveGraph div.bars div[bar="tb5"] span {
+	background-color: #F6540D;
+} 
+div.liveGraph div.bars div[bar="tb6"] span {
+	background-color: #08C1B6;
+} 
+div.liveGraph div.bars div[bar="tb7"] span {
+	background-color: #6711D3;
+} 
+div.liveGraph div.bars div[bar="tb8"] span {
+	background-color: #F39E0A;
+} 
+div.liveGraph div.bars div[bar="tb9"] span {
+	background-color: #139909;
+} 
+div.liveGraph div.bars div[bar="tb10"] span {
+	background-color: #0A75AD;
+} 
+div.liveGraph div.bars div[bar="tb11"] span {
+	background-color: #16AD0A;
+} 
+div.liveGraph div.bars div[bar="tb12"] span {
+	background-color: #F7131E;
+}
+div.liveGraph div.bars div[bar="tb13"] span {
+	background-color: #DDDB13;
+}  
+
+

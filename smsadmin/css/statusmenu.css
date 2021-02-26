@@ -1,0 +1,48 @@
+.status-menu{
+    display:none;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    position: absolute;
+    background: #FFFFFF;
+    border: 1px solid #D9E6F0;
+    width:auto;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    font-size: 13px;
+}
+
+.status-menu ul{
+       list-style: none;
+        padding: 0;
+        margin: 0;
+}
+
+.status-menu li{
+    margin: 0px;
+    padding: 3px;
+}
+.status-menu ul a{
+        display: block;
+	      padding: 1px 5px;
+	      padding-left: 28px;
+        text-decoration: none;
+        background-repeat: no-repeat;
+}
+
+.status-menu ul li a:hover, .status-menu ul li a:focus {
+color: #FFFFFF;
+background-color: #7E9DCC;
+}
+
+.seprator{
+    border-bottom: 1px solid  #D9E6F0;
+}
+
+
+.status-menu li.cut A { background-image: url(../img/icons/cut.png); }
+.status-menu li.copy A { background-image: url(../img/icons/copy.png); }
+.status-menu li.paste A { background-image: url(../img/icons/paste.png); }
+.status-menu li.sm-inactive A { background-image: url(../img/icons/inactive.png); }
+.status-menu li.sm-pending A { background-image: url(../img/icons/pending.png); }
+.status-menu li.sm-active A { background-image: url(../img/icons/active.png); }

@@ -1,0 +1,250 @@
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+/**
+ * @ Author      Reza Ahmed <coder.reza@gamil.com>
+ * @ Created    April 21, 2012
+ */
+class Student extends BACKEND_Controller{
+	
+	function __construct()
+	{
+		parent::__construct();
+		$this->load->helper('html');
+	}
+	
+	function index()
+	{
+		$this->init_grid();
+
+	}
+    function view()
+	{
+		
+		$arg = $this->uri->uri_to_assoc();
+        $this->load->model('studentmodel');
+        $info = $this->studentmodel->get_details_info($arg['id']);
+        if($info)
+        {
+        	$this->set_jquery_ui(array('ui/jquery.ui.tabs','jquery.validate','ui/jquery.ui.datepicker','select-chain',
+        	'jquery.form', 'jquery.loadmask'));
+        	$this->tpl->set_css(array('jquery.loadmask'));
+        	if($info['father_guardian_id'])
+        	 $parent_id = $info['father_guardian_id'].'_'.$info['mother_guardian_id'];
+        	else
+        	 $parent_id = '';
+        	 $this->tpl->assign('parent_id',$parent_id);
+        	$this->tpl->assign($info);
+        }	
+       
+	}
+	function view_details()
+	{
+		
+	}
+	function create()
+	{
+		$this->set_jquery_ui();
+		$this->tpl->set_js(array('jquery.validate','ui/jquery.ui.datepicker','select-chain'));
+		$this->load->library('form_validation',null,'validator');
+		$this->load->model('personaldetailsmodel','pdm');
+		$default_vals = $this->pdm->get_default_values();
+		$default_vals['religion_id']=1;
+		$default_vals['datepicker']='';
+		$this->tpl->assign($default_vals);
+	}
+	public function save()
+	{
+		if($this->validate_form() === FALSE)
+		{
+		  show_error('validation error occured');
+		}
+		else
+		{
+			$this->load->model('studentmodel');
+		    if($this->studentmodel->save())
+		    {
+		    	$this->session->set_flashdata('message',"<div class='info'>Student has been created successfully</div>");
+		    	redirect('student');
+		    }
+		}   
+		$this->tpl->set_view(false);
+	}
+	
+	public function save_more()
+	{
+		$this->output->set_content_type('application/json');
+		$response = array('success' => 1,'message'=>'');
+		if($this->validate_form() === FALSE)
+		{
+			$response = array('success' => 0,'message'=>'Validation error');
+		}
+		else
+		{ 
+			  $this->load->model('personaldetailsmodel','pd');
+			  if($this->pd->edit())
+			  {
+			  	 $response = array('success' => 1,'message'=>'Updated successfully.');
+			  }
+		}
+		$this->output->set_output(json_encode($response));
+	}
+	
+	public function more()
+	{
+		$this->set_jquery_ui(array('ui/jquery.ui.tabs','jquery.validate','ui/jquery.ui.datepicker',
+							'select-chain','jquery.loadmask'));
+		$this->tpl->set_css(array('jquery.loadmask'));
+		$arg = $this->uri->uri_to_assoc();
+        $this->load->model('studentmodel');
+        $info = $this->studentmodel->get_details_info($arg['id']);
+        $this->tpl->assign($info);
+	}
+	public function personal()
+	{
+		//sleep(5);
+		if(!$this->input->is_ajax_request())
+		{
+			show_404();
+		}
+		//$this->tpl->set_view(false);
+		$arg = $this->uri->uri_to_assoc();
+		$id = $arg['id'];
+		$actn = $arg['actn'];
+		if(empty($id))
+		{
+			$actn ='new';
+		}
+		//print_r($arg);
+		$this->tpl->assign('std_id',$arg['std_id']);
+		//$this->tpl->assign('id',$id);
+		$this->load->library('form_validation',null,'validator');
+		switch($arg['type'])
+		{
+			case 'parents':
+						   switch($actn)
+						   {
+						   	case 'view':
+									$this->tpl->set_view('photo');
+							break;
+						   	case 'edit':
+						   		
+						   	default:
+						   		$this->load->model('guardianmodel');
+						   		$this->load->model('studentguardianmodel','sgm');
+						   		$default = $this->sgm->get_default_values();
+						   		$this->tpl->assign('father',$default);
+						   		$default['occupation_id'] = 10;
+						   		$this->tpl->assign('mother',$default);
+						   		$this->tpl->set_view('parents_info');
+						   }
+				 			
+							break;
+			case 'address':
+							$this->tpl->set_view('address');
+							break;
+			case 'guardian':
+		 				   switch($actn)
+						   {
+						   	case 'view':
+									$this->tpl->set_view('photo');
+							break;
+						   	case 'edit':
+						   		
+						   	default:
+						   		
+						   		 $this->tpl->set_view('guardian_info');
+						   }
+							break;	
+			case 'photo':
+						   switch($actn)
+						   {
+						   	case 'view':
+							$this->tpl->set_view('photo');
+							break;
+						   	case 'edit':
+						   		
+						   	default:
+						   		
+						   		 $this->tpl->set_view('photo');
+						   }
+							break;								
+			case 'personal': 
+						   switch($actn)
+						   {
+						   	case 'view':
+						   	  $this->load->model('studentmodel');
+						   	  $info = $this->studentmodel->get_details_info($arg['std_id']);
+						   	  $this->tpl->assign($info);
+						   	  $this->tpl->set_view('student/personal_info_view',true);
+						   	  break;
+						   	case 'edit':
+						   		    $this->load->model('personaldetailsmodel','pdm');
+						   		    $default_vals = $this->pdm->get_default_values();
+						   	 		$info = $this->pdm->find($id);
+						   	 		$date = DateTime::createFromFormat('Y-m-d',$info['dob']);
+						   	 		$info['datepicker'] =$date->format('d M, Y');
+						   	 		$this->load->model('castemodel');
+						   	 		$info['religion_id'] = $this->castemodel->find_one_by_pk('religion_id',$info['caste_id']);
+						   	  		$this->tpl->assign($info);
+						   	  		$this->tpl->set_view('personal_info');
+						   		    break;
+						   	case 'default' :	  
+						   		 $this->tpl->set_view('personal_info');
+						   		 break;
+						   }
+						   
+						   
+						   break;
+		}
+		// $this->tpl->set_view('home/index');
+	}
+	protected function init_grid()
+	{
+	   $this->load->library('grid_board');
+	   $grid_columns = array('student_number'=>'Student Number','first_name'=>'First Name',
+	   						'status'=>'Status','created_at'=>'Create Date', 
+	  					    'mobile'=>'Mobile','gender'=>'Gender');
+	   $this->grid_board->set_column($grid_columns);
+	   $this->grid_board->render('studentmodel');	
+	}
+	
+	protected function get_validation_rule()
+	{
+		$config = array(
+                array(
+                     'field'   => 'first_name',
+                     'label'   => 'First Name',
+                     'rules'   => 'required'
+                  ),
+               array(
+                     'field'   => 'dob',
+                     'label'   => 'Date Of Birth',
+                     'rules'   => 'required'
+                  ),
+               array(
+                     'field'   => 'is_tribe',
+                     'label'   => 'Tribe',
+                     'rules'   => 'required'
+                  ),
+              array(
+                     'field'   => 'caste_id',
+                     'label'   => 'Caste',
+                     'rules'   => 'required'
+                  ), 
+               array(
+                     'field'   => 'nationality_id',
+                     'label'   => 'Nationality',
+                     'rules'   => 'required'
+                  ),            
+               array(
+                     'field'   => 'gender',
+                     'label'   => 'Gender',
+                     'rules'   => 'required'
+                  ),   
+                  );
+		return $config;	
+	}
+	
+	
+	
+}
+?>

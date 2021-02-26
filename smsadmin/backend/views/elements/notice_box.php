@@ -1,0 +1,27 @@
+ 
+ <!-- Content Box Start -->
+        <div class="contentcontainer">
+            <div class="headings">
+                <h2>Notice Box Styles</h2>
+            </div>
+            <div class="contentbox">
+                <div class="noticebox">
+                    <div class="innernotice">
+                        <h4>Yellow Notice Box</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        <p>Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        <p><a href="#" title="">Lincidunt ut laoreet dolore</a></p>
+                    </div>
+                </div>
+                <div class="noticeboxalt">
+                    <div class="innernotice">
+                        <h4>Grey Notice Box</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        <p>Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        <p><a href="#" title="">Lincidunt ut laoreet dolore</a></p>
+                    </div>
+                </div>
+                <div style="clear: both;"></div>
+            </div>
+        </div>
+        <!-- Content Box End -->
